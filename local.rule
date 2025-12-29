@@ -1,0 +1,13 @@
+create a file 
+
+nano snort/local.rules
+
+run snort with rules 
+
+sudo snort -i eth0 -A console -c /etc/snort/snort.conf
+
+test alerts 
+
+ping -f <target-ip>
+nmap -sS <target-ip>
+
