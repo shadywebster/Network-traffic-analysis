@@ -1,0 +1,11 @@
+sudo tcpdump -i eth0 -w captures/traffic.pcap
+
+
+verify the file 
+
+ls -lh captures/traffic.pcap
+capinfos captures/traffic.pcap
+
+quick peek 
+
+tshark -r captures/traffic.pcap | head
